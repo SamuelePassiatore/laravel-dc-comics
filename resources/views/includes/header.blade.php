@@ -15,13 +15,13 @@
         <a href="{{ url('/') }}"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo dc comics"></a>
     </figure>
     <ul>
-        {{-- @foreach ($links as $link)
+        @foreach ($links as $link)
             <li>
                 <a href="{{ route($link['route_name']) }}"
                     class="{{ request()->routeIs($link['route_name']) ? 'active' : '' }}">{!! $link['text'] !!}
                 </a>
             </li>
-        @endforeach --}}
+        @endforeach
     </ul>
     <div class="input-group">
         <form action="#">
