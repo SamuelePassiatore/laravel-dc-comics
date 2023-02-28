@@ -1,4 +1,4 @@
-.main-home-top {
+.main-comics-top {
     min-height: 100px;
     background-color: $light-black;
     color: white;
@@ -14,12 +14,12 @@
         bottom: 18px;
     }
 
-    .home-card-container {
+    .comics-card-container {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 10px;
 
-        .home-series-card {
+        .comics-series-card {
             flex-basis: calc(100% / 6);
             padding: 10px;
             position: relative;
@@ -43,7 +43,7 @@
         }
     }
 
-    .home-button {
+    .comics-button {
         text-align: center;
 
         button {
@@ -55,7 +55,7 @@
     }
 }
 
-.main-home-bottom {
+.main-comics-bottom {
     min-height: 120px;
     background-color: $primary;
     display: flex;
