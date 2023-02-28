@@ -9,12 +9,12 @@
             <div class="container">
                 <h2>CURRENT SERIES</h2>
                 <div class="comics-card-container">
-                    @foreach ($comics as $comic)
+                    {{-- @foreach ($comics as $comic)
                         <div class="comics-series-card">
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                             <h6>{{ $comic['series'] }}</h6>
                         </div>
-                    @endforeach
+                    @endforeach --}}
                 </div>
                 <div class="comics-button">
                     <button>LOAD MORE</button>
