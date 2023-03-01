@@ -3,7 +3,7 @@
     background-color: $primary;
 
     .main-top-container {
-        padding: 0 100px;
+        padding: 0 55px;
 
 
         .main-top-card {
@@ -27,16 +27,182 @@
 
             .label-top {
                 top: 2px;
-                
+                text-transform: uppercase;
             }
 
             .label-bottom {
                 bottom: 2px;
-                width: 98%;
+                width: 97%;
                 text-align: center;
+            }
+        }        
+    }
+}
+
+.main-show-center {
+
+
+    .main-center-container {
+        padding: 60px 55px;
+            
+        .main-center-elements {
+            display: flex;
+    
+                .elements-text {
+                    width: 70%;
+    
+                    h1 {
+                        text-transform: uppercase;
+                        color: $blue;
+                        margin-bottom: 15px;
+                    }
+    
+                    .row-price {
+                        width: 95%;
+                        display: flex;
+    
+                        .row-price-general {
+                            display: flex;
+                            align-items: center;
+                            height: 50px;
+                            padding: 0 20px;
+                            background-color: $green;
+                            border-bottom: 2px solid $light-grey;
+                        }
+    
+                        .row-price-left {
+                            width: 65%;
+                            justify-content: space-between;
+                            border-right: 2px solid $light-grey;
+                        }
+    
+                        .row-price-right {
+                            justify-content: center;
+                            width: 35%;
+                            cursor: pointer;
+                        }
+    
+                        .light-green {
+                            color: $light-green;
+                        }
+    
+                        .color-white {
+                            color: $white;
+                        }
+                    }
+    
+                    .description-container {
+                        width: 95%;
+                        padding: 15px 0;
+    
+                        p {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: $light-grey;
+                        }
+                    }
+                }
+    
+                .elements-img {
+                    width: 30%;
+    
+                    .elements-img-text {
+                        font-size: 14px;
+                        color: $dark-grey;
+                        font-weight: bold;
+                        position: relative;
+                        bottom: 25px;
+                        left: 58%;
+                    }
+    
+                    img {
+                        width: 100%;
+                    }
+                }
+        }
+    }
+}
+
+
+.main-show-bottom {
+    background-color: $white-grey;
+    border-top: 1px solid $light-light-grey;
+
+    .main-bottom-container {
+        padding: 35px 55px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: space-between;
+
+        .talents, .specs {
+            width: 47%;
+
+            .talents-title, .specs-title {
+                color: $blue;
+                padding-bottom: 18px;
+                border-bottom: 1px solid $light-light-grey;
+            }
+
+            .talents-content, .specs-content {
+                display: flex;
+                padding: 10px 0;
+                border-bottom: 1px solid $light-light-grey;
+            }
+
+            .name-paragraph {
+                width: 30%;
+                color: $blue;
+                font-size: 13px;
+            }
+
+            .content-paragraph {
+                width: 70%;
+                font-size: 13px;
+                color: $light-primary;
+            }
+
+            .text-uppercase {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            .color-grey {
+                color: $light-grey;
+            }
+        }
+    }
+
+    .main-bottom-images {
+        display: flex;
+        height: 80px;
+        border-top: 1px solid $light-light-grey;
+
+        .main-bottom-images-content {
+            width: calc(100% / 6);
+            height: 100%;
+            border-right: 1px solid $light-light-grey;
+            padding: 0 20px;
+
+            .text {
+                font-size: 13px;
+                font-weight: bold;
+                color: $light-light-grey;
+            }
+
+            img {
+                background-color: $white-grey;
+                height: 65%;
             }
         }
 
-        
+        .no-border {
+            border-right: 0;
+        }
+
+        .d-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 }
