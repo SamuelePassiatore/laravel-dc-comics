@@ -25,9 +25,9 @@
         @endforeach
     </ul>
     <div class="input-group">
-        <form action="#">
-            <input type="text" placeholder="Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <form action="{{ route('comics') }}" method="GET">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
     </div>
 </header>
