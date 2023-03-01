@@ -18,7 +18,8 @@
         @foreach ($links as $link)
             <li>
                 <a href="{{ route($link['route_name']) }}"
-                    class="{{ request()->routeIs($link['route_name']) ? 'active' : '' }}">{!! $link['text'] !!}
+                    class="{{ request()->is($link['route_name'], $link['route_name'] . '*') ? 'active' : '' }}">
+                    {!! $link['text'] !!}
                 </a>
             </li>
         @endforeach
