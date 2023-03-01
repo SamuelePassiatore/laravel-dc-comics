@@ -17,7 +17,7 @@
     .comics-card-container {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
         .comics-series-card {
             flex-basis: calc(100% / 6);
@@ -45,13 +45,6 @@
 
     .comics-button {
         text-align: center;
-
-        button {
-            padding: 8px 30px;
-            background-color: $primary;
-            border: transparent;
-            color: white;
-        }
     }
 }
 

@@ -1,0 +1,84 @@
+section.new-comics {
+padding: 20px 0;
+    .new-comics-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $light-light-grey;
+        padding-bottom: 10px;
+        
+        h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+    
+        .a-button {
+            background-color: $light-grey;
+            
+            &:hover {
+                box-shadow: 1px 0 10px $light-grey;
+            }
+        }
+    }
+
+    .new-comics-form {
+        padding: 20px 0;
+
+        .inputs, .text-areas {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            .inputs-div {
+                width: 45%;
+
+                .label {
+                    font-size: 18px;
+                }
+    
+                input, select {
+                    width: 100%;
+                    height: 40px;
+                    margin-top: 5px;
+                    padding: 5px;
+                    font-size: 15px;
+                }
+            }
+
+            textarea.description {
+                width: 1000px;
+                margin-top: 5px;
+                padding: 5px;
+                font-size: 15px;
+            }
+
+            .text-areas-div {
+                width: 48%;
+
+                textarea.list-names {
+                    width: 100%;
+                    margin-top: 5px;
+                    padding: 5px;
+                    font-size: 15px;
+                }
+            }
+
+        }
+
+
+    
+
+
+ 
+ 
+
+
+
+    
+
+        
+
+
+    }
+
+}
