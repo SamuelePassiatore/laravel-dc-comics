@@ -2,6 +2,8 @@
 
 @section('title', $comic->title)
 
+@section('icon', $comic->thumb)
+
 @section('content')
     <section id="comics-details">
         <div class="main-show-top">
