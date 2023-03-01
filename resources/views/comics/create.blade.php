@@ -9,18 +9,17 @@
             <a class="a-button" href="{{ route('comics.index') }}">Back to comics</a>
         </div>
         <div class="new-comics-form">
-            <form action="{{ route('comics.store') }}" method="POST">
+            <form method="POST" action="{{ route('comics.store') }}">
                 {{-- Token csrf --}}
                 @csrf
-
                 <div class="display-flex inputs">
                     <div class="inputs-div">
                         <label for="title">Title</label>
-                        <input type="text" id="title" placeholder="Title" name="title">
+                        <input type="text" id="title" placeholder="Title" name="title" required>
                     </div>
                     <div class="inputs-div">
                         <label for="series">Series</label>
-                        <input type="text" id="series" placeholder="Series" name="series">
+                        <input type="text" id="series" placeholder="Series" name="series" required>
                     </div>
                 </div>
                 <div class="display-flex inputs">
