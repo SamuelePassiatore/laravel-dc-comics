@@ -46,7 +46,7 @@ class ComicController extends Controller
         $comic->artists = $data['artists'];
         $comic->writers = $data['writers'];
         $comic->save();
-        return to_route('comics.index', $comic->id);
+        return to_route('comics.show', $comic->id);
     }
 
     /**
