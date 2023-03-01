@@ -6,7 +6,7 @@
                     <li>
                         <a href="{{ url('/') }}" class="title-list">DC COMICS</a>
                         <a href="{{ route('characters') }}">Characters</a>
-                        <a href="{{ route('comics') }}">Comics</a>
+                        <a href="{{ route('comics.index') }}">Comics</a>
                         <a href="{{ route('movies') }}">Movie</a>
                         <a href="{{ route('tv') }}">TV</a>
                         <a href="{{ route('games') }}">Games</a>

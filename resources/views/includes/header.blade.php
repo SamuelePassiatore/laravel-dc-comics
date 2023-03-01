@@ -18,14 +18,14 @@
         @foreach ($links as $link)
             <li>
                 <a href="{{ route($link['route_name']) }}"
-                    class="{{ request()->is($link['route_name'], $link['route_name'] . '*') ? 'active' : '' }}">
+                    class="{{ Str::startsWith(request()->url(), route($link['route_name'])) ? 'active' : '' }}">
                     {!! $link['text'] !!}
                 </a>
             </li>
         @endforeach
     </ul>
     <div class="input-group">
-        <form action="{{ route('comics') }}" method="GET">
+        <form action="{{ route('comics.index') }}" method="GET">
             <input type="text" placeholder="Search" name="search">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>

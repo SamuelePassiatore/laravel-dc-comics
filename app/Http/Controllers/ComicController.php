@@ -13,14 +13,11 @@ class ComicController extends Controller
     public function index(Request $request)
     {
         $search = $request->query('search');
-
-        $query = Comic::all();
-
+        $query = Comic::query();
         if ($search) {
             $query->where('series', 'LIKE', "%$search%");
         }
-
-        $comics = $query;
+        $comics = $query->get();
         return view('comics.index', compact('comics', 'search'));
     }
 
