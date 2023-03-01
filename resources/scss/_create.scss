@@ -65,6 +65,19 @@ padding: 20px 0;
 
         }
 
+        .submit-button-div {
+            margin-top: 20px;
+
+            .a-button { 
+                background-color: $primary;
+                padding: 15px 80px;
+                font-size: 16px;
+                
+                &:hover {
+                    box-shadow: 1px 0 10px $primary;
+                }
+            }
+        }
 
     
 

@@ -9,54 +9,62 @@
             <a class="a-button" href="{{ route('comics.index') }}">Back to comics</a>
         </div>
         <div class="new-comics-form">
-            <form action="">
+            <form action="{{ route('comics.store') }}" method="POST">
                 <div class="display-flex inputs">
                     <div class="inputs-div">
-                        <label for="">Title</label>
-                        <input type="text">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" placeholder="Title" name="title">
                     </div>
                     <div class="inputs-div">
-                        <label for="">Series</label>
-                        <input type="text">
+                        <label for="series">Series</label>
+                        <input type="text" id="series" placeholder="Series" name="series">
                     </div>
                 </div>
                 <div class="display-flex inputs">
                     <div class="inputs-div">
-                        <label for="">Type</label>
-                        <select name="" id=""></select>
+                        <label for="type">Type</label>
+                        <select name="type" id="type">
+                            <option value="">Select type</option>
+                            <option>comic book</option>
+                            <option>graphic novel</option>
+                        </select>
                     </div>
                     <div class="inputs-div">
-                        <label for="">Price</label>
-                        <input type="text">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" placeholder="Price" name="price">
                     </div>
                 </div>
                 <div class="display-flex inputs">
                     <div class="inputs-div">
-                        <label for="">Sale Date</label>
-                        <input type="date">
+                        <label for="sale_date">Sale Date</label>
+                        <input type="text" id="sale_date" placeholder="Sale Date" name="sale_date">
                     </div>
                     <div class="inputs-div">
-                        <label for="">Image</label>
-                        <input type="url">
+                        <label for="thumb">Thumb</label>
+                        <input type="url" id="thumb" placeholder="Thumb" name="thumb">
                     </div>
                 </div>
                 <div class="inputs">
                     <div>
-                        <label for="">Description</label>
-                        <textarea class="description" name="" id="" rows="10"></textarea>
+                        <label for="description">Description</label>
+                        <textarea class="description" name="description" id="description" placeholder="Description" rows="10"></textarea>
                     </div>
                 </div>
 
                 <div class="display-flex text-areas">
                     <div class="text-areas-div">
-                        <label for="">Artists</label>
-                        <textarea class="list-names" name="" id="" cols="30" rows="10"></textarea>
+                        <label for="artists">Artists</label>
+                        <textarea class="list-names" name="artists" id="artists" placeholder="Artists" cols="30" rows="10"></textarea>
                     </div>
                     <div class="text-areas-div">
-                        <label for="">Writers</label>
-                        <textarea class="list-names" name="" id="" cols="30" rows="10"></textarea>
+                        <label for="writers">Writers</label>
+                        <textarea class="list-names" name="writers" id="writers" placeholder="Writers" cols="30" rows="10"></textarea>
                     </div>
                 </div>
+                <div class="submit-button-div">
+                    <button class="a-button">SAVE</button>
+                </div>
+
             </form>
         </div>
     </section>
