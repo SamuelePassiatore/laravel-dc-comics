@@ -10,6 +10,9 @@
         </div>
         <div class="new-comics-form">
             <form action="{{ route('comics.store') }}" method="POST">
+                {{-- Token csrf --}}
+                @csrf
+
                 <div class="display-flex inputs">
                     <div class="inputs-div">
                         <label for="title">Title</label>
