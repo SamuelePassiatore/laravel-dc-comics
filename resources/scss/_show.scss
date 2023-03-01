@@ -5,6 +5,16 @@
     .main-top-container {
         padding: 0 55px;
 
+        .a-button {
+            background-color: $light-grey;
+            position: relative;
+            bottom: 200px;
+            left: 30%;
+            
+            &:hover {
+                box-shadow: 1px 0 10px $white-grey;
+            }
+        }
 
         .main-top-card {
             position: relative;

@@ -13,6 +13,7 @@
                     <div class="label-top">{{ $comic->type }}</div>
                     <div class="label-bottom">VIEW GALLERY</div>
                 </div>
+                <a class="a-button" href="{{ route('comics.index') }}">Back to comics</a>
             </div>
         </div>
         <div class="main-show-center">

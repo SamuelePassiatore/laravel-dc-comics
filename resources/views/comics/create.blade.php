@@ -15,7 +15,8 @@
                 <div class="display-flex inputs">
                     <div class="inputs-div">
                         <label for="title">Title</label>
-                        <input type="text" id="title" placeholder="Title" name="title" required>
+                        <input type="text" id="title" placeholder="Title" name="title" value="{{ old('title') }}"
+                            required>
                     </div>
                     <div class="inputs-div">
                         <label for="series">Series</label>
@@ -37,13 +38,17 @@
                     </div>
                 </div>
                 <div class="display-flex inputs">
-                    <div class="inputs-div">
+                    <div class="inputs-div-smaller">
                         <label for="sale_date">Sale Date</label>
                         <input type="text" id="sale_date" placeholder="Sale Date" name="sale_date">
                     </div>
-                    <div class="inputs-div">
+                    <div class="inputs-div-thumb">
                         <label for="thumb">Thumb</label>
                         <input type="url" id="thumb" placeholder="Thumb" name="thumb">
+                    </div>
+                    <div class="inputs-div-img">
+                        <img src="https://imgs.search.brave.com/bes1Md0cXSdhNwC5wGXnxjjkNY3FXM5VtRptWbPuJWw/rs:fit:400:300:1/g:ce/aHR0cHM6Ly93d3cu/bmFtZXByb3MuY29t/L2F0dGFjaG1lbnRz/L2VtcHR5LXBuZy44/OTIwOS8"
+                            alt="default image" id="preview">
                     </div>
                 </div>
                 <div class="inputs">
@@ -70,4 +75,8 @@
             </form>
         </div>
     </section>
+@endsection
+
+@section('scripts')
+    @vite('resources/js/preview.js')
 @endsection
