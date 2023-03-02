@@ -14,6 +14,11 @@
                             <a class="a-button button-edit" href="{{ route('comics.edit', $comic->id) }}">Edit Comic</a>
                             <a href="{{ route('comics.show', $comic->id) }}"><img src="{{ $comic['thumb'] }}"
                                     alt="{{ $comic['title'] }}"></a>
+                            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button class="a-button-delete">Delete Comic</button>
+                            </form>
                             <h6>{{ $comic['series'] }}</h6>
                         </div>
                     @endforeach

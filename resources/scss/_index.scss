@@ -42,8 +42,15 @@
             }
 
             .a-button, .button-edit {
-                padding: 0;
-                padding: 6px 32px;
+                padding: 6px 31px;
+                font-size: 14px;
+                margin: 0;
+                font-weight: bold;
+            }
+
+            .a-button-delete {
+                background-color: $red;
+                padding: 6px 18px;
                 font-size: 14px;
                 margin: 0;
             }

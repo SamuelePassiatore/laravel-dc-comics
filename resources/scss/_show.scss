@@ -23,6 +23,23 @@
             color: $light-black;
         }
 
+        .a-button-delete {
+            background-color: $red;
+            position: relative;
+            bottom: 200px;
+            left: 10%;
+            border: transparent;
+            margin-right: 10px;
+            padding: 10px 40px;
+            font-size: 15px;
+        }
+
+        form {
+            display: inline-block;
+            position: relative;
+            left: 69px;
+        }
+
         .main-top-card {
             position: relative;
             bottom: 200px;

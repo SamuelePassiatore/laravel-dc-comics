@@ -89,6 +89,18 @@ class ComicController extends Controller
     {
         $data = $request->all();
 
+        $request->validate([
+            'title' => 'required|string',
+            'description' => 'nullable|string',
+            'thumb' => 'nullable|url',
+            'price' => 'string',
+            'series' => 'required|string',
+            'sale_date' => 'string',
+            'type' => 'string',
+            'artists' => 'nullable|string',
+            'writers' => 'nullable|string',
+        ]);
+
         $comic->title = $data['title'];
         $comic->description = $data['description'];
         $comic->thumb = $data['thumb'];
@@ -109,6 +121,7 @@ class ComicController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Comic::destroy($id);
+        return to_route('comics.index');
     }
 }
