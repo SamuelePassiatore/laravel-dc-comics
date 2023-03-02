@@ -1,5 +1,5 @@
 @if ($errors->any())
-    <div class="alert alert-danger">
+    <div class="alert-input alert-danger">
         <div>
             @foreach ($errors->all() as $error)
                 <div>&blacksquare; {{ $error }}</div>

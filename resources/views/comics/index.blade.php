@@ -3,6 +3,7 @@
 @section('title', 'Comics')
 
 @section('content')
+
     <section id="comics">
         {{-- Main comics top --}}
         <div class="main-comics-top">
@@ -13,7 +14,9 @@
                         <div class="comics-series-card">
                             <a class="a-button button-edit" href="{{ route('comics.edit', $comic->id) }}">Edit Comic</a>
                             <a href="{{ route('comics.show', $comic->id) }}"><img src="{{ $comic['thumb'] }}"
-                                    alt="{{ $comic['title'] }}"></a>
+                                    alt="{{ $comic['title'] }}">
+                            </a>
+                            {{-- FORM --}}
                             <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')

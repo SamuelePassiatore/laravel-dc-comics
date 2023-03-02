@@ -27,6 +27,7 @@ class ComicController extends Controller
     public function create()
     {
         $comic = new Comic();
+
         return view('comics.create', compact('comic'));
     }
 
@@ -63,7 +64,9 @@ class ComicController extends Controller
 
         $comic->save();
 
-        return to_route('comics.show', $comic->id);
+        return to_route('comics.show', $comic->id)
+            ->with('type', 'success')
+            ->with('message', "'$comic->series' created successfully");
     }
 
     /**
@@ -114,15 +117,19 @@ class ComicController extends Controller
 
         $comic->save();
 
-        return to_route('comics.show', $comic->id);
+        return to_route('comics.show', $comic->id)
+            ->with('type', 'success')
+            ->with('message', "'$comic->series' has been successfully edited");
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Comic $comic)
     {
-        Comic::destroy($id);
-        return to_route('comics.index');
+        $comic->delete();
+        return to_route('comics.index')
+            ->with('message', "'$comic->series' has been successfully removed")
+            ->with('type', 'success');
     }
 }

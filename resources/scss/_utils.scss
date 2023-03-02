@@ -8,11 +8,19 @@
     display: flex;
   }
 
-  .alert {
+  .alert-input {
     display: flex;
     align-items: center;
     padding: 15px;
     margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  .alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
     border-radius: 5px;
   }
 
@@ -22,7 +30,7 @@
   }
 
   .alert-success {
-    background-color: $light-green-bootstrap;
+    background-color: $light-green;
     color: $green-bootstrap;
   }
 

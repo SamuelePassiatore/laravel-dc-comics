@@ -13,6 +13,7 @@
                     <div class="label-top">{{ $comic->type }}</div>
                     <div class="label-bottom">VIEW GALLERY</div>
                 </div>
+                {{-- FORM --}}
                 <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
