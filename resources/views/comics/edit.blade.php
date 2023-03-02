@@ -18,7 +18,8 @@
                     </div>
                 </div>
             @endif
-            <form method="POST" action="{{ route('comics.store') }}" novalidate>
+            <form method="POST" action="{{ route('comics.update', $comic->id) }}" novalidate>
+                @method('PUT')
                 {{-- Token csrf --}}
                 @csrf
                 <div class="display-flex inputs">

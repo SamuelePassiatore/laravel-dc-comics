@@ -21,7 +21,7 @@
 
         .comics-series-card {
             flex-basis: calc(100% / 6);
-            padding: 10px;
+            padding: 12px;
             position: relative;
             transition: box-shadow 1s;
             cursor: pointer;
@@ -40,12 +40,20 @@
                 text-transform: uppercase;
                 padding-top: 10px;
             }
+
+            .a-button, .button-edit {
+                padding: 0;
+                padding: 6px 32px;
+                font-size: 14px;
+                margin: 0;
+            }
         }
     }
 
     .comics-button {
         text-align: center;
-        padding: 15px 0;
+        padding-top: 5px;
+        padding-bottom: 15px;
     }
 }
 

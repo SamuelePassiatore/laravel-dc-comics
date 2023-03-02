@@ -11,6 +11,7 @@
                 <div class="comics-card-container">
                     @foreach ($comics as $comic)
                         <div class="comics-series-card">
+                            <a class="a-button button-edit" href="{{ route('comics.edit', $comic->id) }}">Edit Comic</a>
                             <a href="{{ route('comics.show', $comic->id) }}"><img src="{{ $comic['thumb'] }}"
                                     alt="{{ $comic['title'] }}"></a>
                             <h6>{{ $comic['series'] }}</h6>
@@ -19,7 +20,6 @@
                 </div>
                 <div class="comics-button">
                     <a class="a-button" href="{{ route('comics.create') }}">ADD COMICS</a>
-                    <a class="a-button button-edit ms-3" href="{{ route('comics.edit', $comic->id) }}">Edit Comic</a>
                 </div>
             </div>
         </div>
