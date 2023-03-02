@@ -7,3 +7,26 @@
   .display-flex {
     display: flex;
   }
+
+  .alert {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  .alert-danger {
+    background-color: $pink;
+    color: $red;
+  }
+
+  .alert-success {
+    background-color: $light-green-bootstrap;
+    color: $green-bootstrap;
+  }
+
+  .alert-info {
+    background-color: $light-blue-bootstrap;
+    color: $blue-bootstrap;
+  }

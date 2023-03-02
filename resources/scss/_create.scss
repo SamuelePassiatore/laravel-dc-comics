@@ -24,16 +24,6 @@ padding: 20px 0;
     .new-comics-form {
         padding: 20px 0;
 
-        .alert {
-            background-color: $pink;
-            color: $red;
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-        }
-
         .inputs, .text-areas {
             display: flex;
             justify-content: space-between;

@@ -10,7 +10,7 @@
         </div>
         <div class="new-comics-form">
             @if ($errors->any())
-                <div class="alert">
+                <div class="alert alert-danger">
                     <div>
                         @foreach ($errors->all() as $error)
                             <div>&blacksquare; {{ $error }}</div>
