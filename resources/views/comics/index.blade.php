@@ -17,7 +17,8 @@
                                     alt="{{ $comic['title'] }}">
                             </a>
                             {{-- FORM --}}
-                            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST" class="delete-forms"
+                                data-name="{{ $comic->series }}">
                                 @csrf
                                 @method('DELETE')
                                 <button class="a-button-delete">Delete Comic</button>
@@ -69,4 +70,8 @@
             </div>
         </div>
     </section>
+@endsection
+
+@section('scripts')
+    @vite('resources/js/delete-confirmation.js')
 @endsection

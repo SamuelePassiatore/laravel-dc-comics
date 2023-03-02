@@ -42,7 +42,7 @@ class ComicController extends Controller
             'thumb' => 'nullable|url',
             'price' => 'string',
             'series' => 'required|string',
-            'sale_date' => 'string',
+            'sale_date' => 'date',
             'type' => 'string',
             'artists' => 'nullable|string',
             'writers' => 'nullable|string',
@@ -66,7 +66,7 @@ class ComicController extends Controller
 
         return to_route('comics.show', $comic->id)
             ->with('type', 'success')
-            ->with('message', "'$comic->series' created successfully");
+            ->with('message', "'$comic->series' has been successfully created");
     }
 
     /**
@@ -99,7 +99,7 @@ class ComicController extends Controller
             'thumb' => 'nullable|url',
             'price' => 'string',
             'series' => 'required|string',
-            'sale_date' => 'string',
+            'sale_date' => 'date',
             'type' => 'string',
             'artists' => 'nullable|string',
             'writers' => 'nullable|string',
