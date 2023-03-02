@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', 'New comics')
+@section('title', 'New comic')
 
 @section('content')
     <section class="new-comics container">
         <div class="new-comics-title">
-            <h1>Add New Comics</h1>
+            <h1>Add New Comic</h1>
             <a class="a-button" href="{{ route('comics.index') }}">Back to comics</a>
         </div>
         <div class="new-comics-form">
@@ -58,8 +58,8 @@
                         <input type="url" id="thumb" placeholder="Thumb" name="thumb" value="{{ old('thumb') }}">
                     </div>
                     <div class="inputs-div-img">
-                        <img src="https://imgs.search.brave.com/bes1Md0cXSdhNwC5wGXnxjjkNY3FXM5VtRptWbPuJWw/rs:fit:400:300:1/g:ce/aHR0cHM6Ly93d3cu/bmFtZXByb3MuY29t/L2F0dGFjaG1lbnRz/L2VtcHR5LXBuZy44/OTIwOS8"
-                            alt="default image" id="preview">
+                        <img src="{{ old('thumb', 'https://imgs.search.brave.com/bes1Md0cXSdhNwC5wGXnxjjkNY3FXM5VtRptWbPuJWw/rs:fit:400:300:1/g:ce/aHR0cHM6Ly93d3cu/bmFtZXByb3MuY29t/L2F0dGFjaG1lbnRz/L2VtcHR5LXBuZy44/OTIwOS8') }}"
+                            alt="default-image" id="preview">
                     </div>
                 </div>
                 <div class="inputs">
