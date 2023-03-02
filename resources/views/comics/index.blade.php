@@ -19,6 +19,7 @@
                 </div>
                 <div class="comics-button">
                     <a class="a-button" href="{{ route('comics.create') }}">ADD COMICS</a>
+                    <a class="a-button button-edit ms-3" href="{{ route('comics.edit', $comic->id) }}">Edit Comic</a>
                 </div>
             </div>
         </div>

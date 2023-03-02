@@ -13,6 +13,7 @@
                     <div class="label-top">{{ $comic->type }}</div>
                     <div class="label-bottom">VIEW GALLERY</div>
                 </div>
+                <a class="a-button button-edit" href="{{ route('comics.edit', $comic->id) }}">Edit Comic</a>
                 <a class="a-button" href="{{ route('comics.index') }}">Back to comics</a>
             </div>
         </div>
